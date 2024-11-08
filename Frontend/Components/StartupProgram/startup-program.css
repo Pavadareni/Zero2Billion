@@ -1,0 +1,375 @@
+#startup-program {
+    width: 100%;
+    background-color: var(--color-F7F7F7);
+}
+
+.startup-program-cont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 0px 20px 0px;
+    gap: 1rem;
+    position: relative;
+    flex-direction: column;
+}
+
+.startup-program-cont .spc-title {
+    font-size: 2.3rem;
+    font-weight: 500;
+    font-family: var(--font-roboto);
+    color: var(--color-292F53);
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.startup-program-cont .spc-title::after {
+    content: "";
+    display: block;
+    width: 240px;
+    height: 4px;
+    border-radius: 3px;
+    background-color: var(--color-3D51A3);
+    margin: 10px auto;
+}
+
+.startup-program-cont .spc-card-cont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.startup-program-cont .spc-card-cont::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;   
+    background-color: var(--color-292F53);
+    opacity: 0.4;
+}
+
+.startup-program-cont .spc-card-cont .spc-card-cont-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0rem;
+    z-index: 1;
+}
+
+.startup-program-cont .spc-card-cont .spc-cc-card {
+    width: calc(100% / 4);
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.startup-program-cont .spc-card-cont .spc-cc-card .spc-cc-card-cont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 0;
+}
+
+.startup-program-cont .spc-card-cont .spc-cc-card .spc-cc-card-cont .spc-cc-cc-img-cont {
+    width: 80%;
+    height: 230px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    max-width: 460px;
+}
+
+.startup-program-cont .spc-card-cont .spc-cc-card .spc-cc-card-cont .spc-cc-cc-img-cont img {
+    width: 100%;
+    height: 100%;
+    max-width: 460px;
+}
+
+.startup-program-cont .spc-card-cont .spc-cc-card .spc-cc-card-cont .spc-cc-cc-img-cont .spc-cc-cc-ic-number {
+    position: absolute;
+    bottom: -20px;
+    right: 10px;
+    font-size: 35px;
+    font-weight: 900;
+    font-family: var(--font-roboto);
+    -webkit-text-stroke: 2px var(--color-F7F7F7);
+    color: transparent;
+}
+
+.startup-program-cont .spc-card-cont .spc-cc-card .spc-cc-card-cont .spc-cc-cc-button {
+    text-decoration: none;
+    color: var(--color-FFFFFF);
+    font-family: var(--font-roboto);
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: left;
+    width: fit-content;
+    padding-left: 8%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    align-self: flex-start;
+}
+
+.startup-program-cont .spc-card-cont .spc-cc-card .spc-cc-card-cont .spc-cc-cc-button::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 2vw;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.3s ease-in-out;
+}
+
+.startup-program-cont .spc-card-cont .spc-cc-card .spc-cc-card-cont .spc-cc-cc-button:hover:after {
+    width: 90px;
+}
+
+.startup-program-cont .spc-card-cont .spc-cc-card .spc-cc-card-cont .spc-cc-cc-button img {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+    transform: rotate(180deg);
+}
+
+.startup-program-cont .spc-card-cont .spc-cc-card .spc-cc-card-cont .spc-cc-cc-title {
+    width: 100%;
+    padding-left: 5%;
+    font-family: var(--font-roboto);
+    color: var(--color-FFFFFF);
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: left;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.startup-program-cont .spc-card-cont .spc-cc-card .spc-cc-card-cont .spc-cc-cc-title::before {
+    content: "";
+    background-color: var(--color-FFFFFF);
+    width: 3px;
+    border-radius: 3px;
+    margin-right: 3%;
+    height: 18px;
+    display: inline-block;
+}
+
+.startup-program-cont .spc-card-cont .spc-cc-card .spc-cc-card-cont .spc-cc-cc-points-cont {
+    display: flex;
+    width: 80%;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: var(--color-FFFFFF);
+    font-family: var(--font-roboto);
+    font-size: 1.05rem;
+    font-weight: 400;
+    text-align: left;    
+    padding-left: 5%;
+    max-width: 460px;
+}
+
+.startup-program-cont .spc-card-cont .spc-cc-card .spc-cc-card-cont .spc-cc-cc-points-cont .spc-cc-cc-points-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.startup-program-cont .spc-card-cont .spc-cc-card .spc-cc-card-cont .spc-cc-cc-points-cont .spc-cc-cc-points-list li {
+    position: relative;
+}
+
+.startup-program-cont .spc-card-cont .spc-cc-card .spc-cc-card-cont .spc-cc-cc-points-cont .spc-cc-cc-points-list li::before {
+    content: "•";
+    position: absolute;
+    left: -15px;
+    top: -2px;
+    color: var(--color-FFFFFF);
+    font-size: 20px;
+}
+
+.startup-program-cont .spc-card-cont .spc-cc-card-1 .spc-cc-card-cont::after,
+.startup-program-cont .spc-card-cont .spc-cc-card-2 .spc-cc-card-cont::after,
+.startup-program-cont .spc-card-cont .spc-cc-card-3 .spc-cc-card-cont::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color: var(--color-FFFFFF);
+    opacity: 0.1;
+    top: 0;
+    right: 0;
+}
+
+@media screen and (min-width: 600px) and (max-width: 999px) {
+    .startup-program-cont .spc-card-cont .spc-cc-card-2 .spc-cc-card-cont::after {
+        display: none;
+    }
+
+    .startup-program-cont .spc-card-cont .spc-cc-card-1 .spc-cc-card-cont::before,
+    .startup-program-cont .spc-card-cont .spc-cc-card-2 .spc-cc-card-cont::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: var(--color-FFFFFF);
+        opacity: 0.1;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 599px) {
+    .startup-program-cont .spc-card-cont .spc-cc-card-1 .spc-cc-card-cont::after,
+    .startup-program-cont .spc-card-cont .spc-cc-card-2 .spc-cc-card-cont::after,
+    .startup-program-cont .spc-card-cont .spc-cc-card-3 .spc-cc-card-cont::after {
+        display: none;
+    }
+
+    .startup-program-cont .spc-card-cont .spc-cc-card-1 .spc-cc-card-cont::before,
+    .startup-program-cont .spc-card-cont .spc-cc-card-2 .spc-cc-card-cont::before,
+    .startup-program-cont .spc-card-cont .spc-cc-card-3 .spc-cc-card-cont::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: var(--color-FFFFFF);
+        opacity: 0.1;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1139px) {
+    .startup-program-cont .spc-card-cont .spc-cc-card .spc-cc-card-cont .spc-cc-cc-points-cont .spc-cc-cc-points-list {
+        font-size: 0.93rem;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1367px) {
+    .startup-program-cont .spc-card-cont .spc-cc-card .spc-cc-card-cont .spc-cc-cc-points-cont .spc-cc-cc-points-list-2 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 683px) {
+    .startup-program-cont .spc-card-cont .spc-cc-card .spc-cc-card-cont .spc-cc-cc-points-cont .spc-cc-cc-points-list-2 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1090px) and (max-width: 1219px) {
+    .startup-program-cont .spc-card-cont .spc-cc-card .spc-cc-card-cont .spc-cc-cc-title {
+        font-size: 1.3rem;
+    }
+
+    .startup-program-cont .spc-card-cont .spc-cc-card .spc-cc-card-cont .spc-cc-cc-title::before {
+        height: 16px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1089px) {
+    .startup-program-cont .spc-card-cont .spc-cc-card .spc-cc-card-cont .spc-cc-cc-title {
+        font-size: 1.2rem;
+    }
+
+    .startup-program-cont .spc-card-cont .spc-cc-card .spc-cc-card-cont .spc-cc-cc-title::before {
+        height: 14px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 999px) {
+    .startup-program-cont .spc-card-cont .spc-cc-card {
+        width: calc(100% / 2);
+    }
+
+    .startup-program-cont .spc-card-cont .spc-cc-card .spc-cc-card-cont .spc-cc-cc-button::after {
+        left: 4vw;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 599px) {
+    .startup-program-cont .spc-card-cont .spc-cc-card {
+        width: calc(100%);
+    }
+
+    .startup-program-cont .spc-card-cont .spc-cc-card .spc-cc-card-cont .spc-cc-cc-button::after {
+        left: 8vw;
+    }
+}
+
+@media screen and (min-width:1000px) and (max-width: 1199px) {
+    .startup-program-cont .spc-card-cont .spc-cc-card .spc-cc-card-cont .spc-cc-cc-img-cont {
+        height: 160px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width: 749px) {
+    .startup-program-cont .spc-card-cont .spc-cc-card .spc-cc-card-cont .spc-cc-cc-img-cont {
+        height: 160px;
+    }
+}
+
+@media screen and (min-width:1200px) and (max-width: 1449px) {
+    .startup-program-cont .spc-card-cont .spc-cc-card .spc-cc-card-cont .spc-cc-cc-img-cont {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width:750px) and (max-width: 849px) {
+    .startup-program-cont .spc-card-cont .spc-cc-card .spc-cc-card-cont .spc-cc-cc-img-cont {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width:350px) and (max-width: 399px) {
+    .startup-program-cont .spc-card-cont .spc-cc-card .spc-cc-card-cont .spc-cc-cc-img-cont {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 599px) {
+    .startup-program-cont .spc-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 419px) {
+    .startup-program-cont .spc-title {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 349px) {
+    #startup-program {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 349px) {
+    #startup-program {
+        display: none;
+    }
+}

@@ -1,0 +1,158 @@
+/* Memes.css */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: -50px;
+}
+
+.roadmap-heading {
+    font-size: 1.9rem;
+    font-weight: 500;
+    font-family: var(--font-roboto);
+    color: var(--color-292F53);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    color: #0F1A3A;
+    text-align: center;
+    width: 100%;
+}
+
+.roadmap-heading:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    border-radius: 5px;
+    margin: 8px auto;
+    background-color: var(--color-1C199A);
+}
+
+.timeline-area {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 150px;
+}
+
+.line-area {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #ccc;
+    z-index: -1;
+}
+
+.single-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease forwards;
+    margin: 0 10px;
+    position: relative;
+}
+
+.single-item.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #0F1A3A;
+    color: #0F1A3A;
+    margin-bottom: 5px;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    padding: 20px;
+}
+.dot::after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 0px);
+    /* Adjust vertical position of the arrow */
+    left: calc(100% + -3px);
+    /* Adjust horizontal position of the arrow */
+    width: 250px;
+    /* Length of the arrow */
+    height: 4px;
+    /* Width of the arrow */
+    background-color: #0F1A3A;
+    /* Color of the arrow */
+    transform: translateY(-50%) rotate(0deg);
+    /* Rotate the arrow */
+}
+
+/* Roadmap.css */
+.dot:last-child::after {
+    display: none; /* Hide the arrow after the last dot */
+}
+
+
+
+.dot:hover+.img-area {
+    display: block;
+}
+
+.country-name {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: var(--font-roboto);
+    color: #0F1A3A;
+}
+
+.img-area {
+    display: none;
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.img-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+      display: none; /* Hide the component for tablet screens and smaller */
+    }
+  }

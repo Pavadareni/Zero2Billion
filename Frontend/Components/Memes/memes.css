@@ -1,0 +1,21 @@
+/* Memes.css */
+.memes-container {
+    margin-top: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+  
+.video-player-container {
+    width: 100%;
+    max-width: 80%; /* You can adjust this value as needed */
+    height: auto; /* Adjust height to auto */
+    position: relative;
+    overflow: hidden; /* Hide overflow content */
+}
+
+.video-player {
+    width: 100%;
+    height: 500px; /* Set height to 100% */
+}

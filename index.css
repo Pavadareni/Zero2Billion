@@ -1,0 +1,65 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    /* Fonts */
+    --font-roboto: 'Roboto', sans-serif;
+
+    /* Colors */
+    --color-FFFFFF: #FFFFFF;
+    --color-F7F7F7: #F7F7F7;
+    --color-B1B1B1: #B1B1B1;
+    --color-CFCFCF: #CFCFCF;
+    --color-EFEFEF: #EFEFEF;
+    --color-C3D9F0: #C3D9F0;
+    --color-C5C4DE: #C5C4DE;
+    --color-8597E1: #8597E1;
+    --color-29ABE2: #29ABE2;
+    --color-3D51A3: #3D51A3;
+    --color-1C199A: #1C199A;
+    --color-292F53: #292F53;
+    --color-0F1A3A: #0F1A3A;
+    --color-000000: #000000;
+    --color-FF9201: #FF9201;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px; 
+}
+
+* {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-F7F7F7);
+}
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* Animation */
+@keyframes rotateBack {
+    from {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

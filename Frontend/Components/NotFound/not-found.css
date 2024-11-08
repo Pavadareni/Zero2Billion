@@ -1,0 +1,136 @@
+#not-found {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.not-found-cont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-FFFFFF);
+}
+
+.not-found-cont .nfc-title {
+    font-family: var(--font-roboto);
+    color: var(--color-0F1A3A);
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+    max-width: 90vw;
+    margin-bottom: 2vh;
+}
+
+.not-found-cont .nfc-description {
+    font-family: var(--font-roboto);
+    color: var(--color-0F1A3A);
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 90vw;
+}
+
+.not-found-cont .nfc-img-cont {
+    width: 80vw;
+    max-width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-found-cont .nfc-img-cont img {
+    width: 100%;
+    height: auto;
+}
+
+.not-found-cont .nfc-text-cont {
+    margin-top: -6vh;
+}
+
+@media screen and (min-width:531px) and (max-width: 634px) {
+    .not-found-cont .nfc-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width:350px) and (max-width: 530px) {
+    .not-found-cont .nfc-title {
+        font-size: 1.65rem;
+    }
+
+    .not-found-cont .nfc-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-height: 350px) and (max-height: 649px) {
+    .not-found-cont {
+        flex-direction: row;
+    }
+ 
+    .not-found-cont .nfc-img-cont {
+        width: 40vw;
+        padding: 30px;
+    }
+
+    .not-found-cont .nfc-text-cont {
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-height: 350px) and (max-height: 649px) and (min-width: 900px) and (max-width: 1089px) {
+    .not-found-cont .nfc-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-height: 350px) and (max-height: 649px) and (min-width: 350px) and (max-width: 899px) {
+    .not-found-cont .nfc-img-cont {
+        width: 250px;
+    }
+
+    .not-found-cont .nfc-text-cont {
+        width: 200px;
+    }
+
+    .not-found-cont .nfc-title {
+        width: 200px;
+        font-size: 1.6rem;
+    }
+
+    .not-found-cont .nfc-description {
+        width: 200px;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-height: 350px) and (max-height: 649px) and (min-width: 350px) and (max-width: 479px) {
+    .not-found-cont {
+        flex-direction: column;
+    }
+
+    .not-found-cont .nfc-text-cont {
+        margin-top: -13vh;
+    }
+}
+
+@media screen and (max-width: 349px) {
+    #not-found {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 349px) {
+    #not-found {
+        display: none;
+    }
+}

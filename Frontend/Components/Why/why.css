@@ -1,0 +1,117 @@
+#why {
+    width: 100%;
+    background-color: var(--color-F7F7F7);
+}
+
+.why-cont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 150px 0px;
+    gap: 3rem
+}
+
+.why-cont .wc-title {
+    font-size: 2.3rem;
+    font-weight: 500;
+    font-family: var(--font-roboto);
+    color: var(--color-292F53);
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.why-cont .wc-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    border-radius: 5px;
+    margin: 10px auto;
+    background-color: var(--color-3D51A3);
+}
+
+.why-cont .wc-counter-cont {
+    width: 90vw;
+    max-width: 1250px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    row-gap: 4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+
+.why-cont .wc-counter-cont .wc-cc-item {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.why-cont .wc-counter-cont .wc-cc-item .wc-cc-i-number {
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: var(--font-roboto);
+    color: var(--color-1C199A);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.why-cont .wc-counter-cont .wc-cc-item .wc-cc-i-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: var(--font-roboto);
+    color: var(--color-1C199A);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 830px) and (max-width: 1345px) {
+    .why-cont .wc-counter-cont {
+        max-width: 750px;
+        padding: 40px 40px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 829px) {
+    .why-cont .wc-counter-cont {
+        max-width: 530px;
+        padding: 40px 40px;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 599px) {
+    .why-cont .wc-counter-cont {
+        max-width: 280px;
+        padding: 40px 40px;
+    }
+}
+
+@media screen and (max-width: 349px) {
+    #why {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 349px) {
+    #why {
+        display: none;
+    }
+}

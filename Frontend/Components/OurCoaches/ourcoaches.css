@@ -1,0 +1,287 @@
+#our-coaches {
+    width: 100%;
+    background-color: var(--color-F7F7F7);
+}
+
+.our-coaches-cont {
+    width: 100%;
+    height: 100%;
+    padding: 100px 0px 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4.5rem
+}
+
+.our-coaches-cont .oc-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 100%;
+    padding-left: 8%;
+    font-family: var(--font-roboto);
+    color: var(--color-292F53);
+    text-align: left;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.our-coaches-cont .oc-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    border-radius: 5px;
+    margin: 10px auto;
+    background-color: var(--color-3D51A3);
+    position: absolute;
+    left: 8%;
+}
+
+.our-coaches-cont .oc-outer-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 1rem
+}
+
+.our-coaches-cont .oc-card-cont {
+    position: relative;
+    overflow: hidden;
+    width: 1160px;
+    height: 100%;
+}
+
+.our-coaches-cont .oc-card-cont .oc-cc-wrapper-cont {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+    transition: all 0.3s ease;
+}
+
+.our-coaches-cont .oc-card-cont .oc-cc-wrapper-cont .oc-cc-card {
+    width: 560px;
+    height: 290px;
+    background-color: var(--color-FFFFFF);
+    border-radius: 0;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-coaches-cont .oc-card-cont .oc-cc-wrapper-cont .oc-cc-card .oc-cc-card-cont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+.our-coaches-cont .oc-card-cont .oc-cc-wrapper-cont .oc-cc-card .oc-cc-card-cont .oc-cc-cc-image-cont {
+    width: 240px;
+    height: 290px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+}
+
+.our-coaches-cont .oc-card-cont .oc-cc-wrapper-cont .oc-cc-card .oc-cc-card-cont .oc-cc-cc-image-cont img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.our-coaches-cont .oc-card-cont .oc-cc-wrapper-cont .oc-cc-card .oc-cc-card-cont .oc-cc-cc-text-cont {
+    width: 320px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.our-coaches-cont .oc-card-cont .oc-cc-wrapper-cont .oc-cc-card .oc-cc-card-cont .oc-cc-cc-text-cont .oc-cc-cc-tc-coach-detail-cont {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0rem;
+}
+
+.our-coaches-cont .oc-card-cont .oc-cc-wrapper-cont .oc-cc-card .oc-cc-card-cont .oc-cc-cc-text-cont .oc-cc-cc-tc-coach-detail-cont .oc-cc-cc-tc-cdc-name {
+    font-family: var(--font-roboto);
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--color-0F1A3A);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 0.8rem;
+}
+
+.our-coaches-cont .oc-card-cont .oc-cc-wrapper-cont .oc-cc-card .oc-cc-card-cont .oc-cc-cc-text-cont .oc-cc-cc-tc-coach-detail-cont .oc-cc-cc-tc-cdc-name::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: var(--color-1C199A);
+}
+
+.our-coaches-cont .oc-card-cont .oc-cc-wrapper-cont .oc-cc-card .oc-cc-card-cont .oc-cc-cc-text-cont .oc-cc-cc-tc-coach-detail-cont .oc-cc-cc-tc-cdc-designation {
+    font-family: var(--font-roboto);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-292F53);
+    text-transform: capitalize;
+    margin-bottom: 0.2rem;
+}
+
+.our-coaches-cont .oc-card-cont .oc-cc-wrapper-cont .oc-cc-card .oc-cc-card-cont .oc-cc-cc-text-cont .oc-cc-cc-tc-coach-detail-cont .oc-cc-cc-tc-cdc-company {
+    font-family: var(--font-roboto);
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--color-292F53);
+    text-transform: capitalize;
+}
+
+.our-coaches-cont .oc-card-cont .oc-cc-wrapper-cont .oc-cc-card .oc-cc-card-cont .oc-cc-cc-text-cont .oc-cc-cc-tc-social-media-handle-cont {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.our-coaches-cont .oc-card-cont .oc-cc-wrapper-cont .oc-cc-card .oc-cc-card-cont .oc-cc-cc-text-cont .oc-cc-cc-tc-social-media-handle-cont .oc-cc-cc-tc-smhc-email a {
+    color: var(--color-0F1A3A);
+    font-family: var(--font-roboto);
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.our-coaches-cont .oc-card-cont .oc-cc-wrapper-cont .oc-cc-card .oc-cc-card-cont .oc-cc-cc-text-cont .oc-cc-cc-tc-social-media-handle-cont .oc-cc-cc-tc-smhc-email a:hover {
+    color: var(--color-1C199A);
+}
+
+.our-coaches-cont .oc-card-cont .oc-cc-wrapper-cont .oc-cc-card .oc-cc-card-cont .oc-cc-cc-text-cont .oc-cc-cc-tc-social-media-handle-cont .oc-cc-cc-tc-smhc-linkedin {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.our-coaches-cont .oc-card-cont .oc-cc-wrapper-cont .oc-cc-card .oc-cc-card-cont .oc-cc-cc-text-cont .oc-cc-cc-tc-social-media-handle-cont .oc-cc-cc-tc-smhc-linkedin a {
+    color: var(--color-292F53);
+    font-family: var(--font-roboto);
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.our-coaches-cont .oc-card-cont .oc-cc-wrapper-cont .oc-cc-card .oc-cc-card-cont .oc-cc-cc-text-cont .oc-cc-cc-tc-social-media-handle-cont .oc-cc-cc-tc-smhc-linkedin:hover,
+.our-coaches-cont .oc-card-cont .oc-cc-wrapper-cont .oc-cc-card .oc-cc-card-cont .oc-cc-cc-text-cont .oc-cc-cc-tc-social-media-handle-cont .oc-cc-cc-tc-smhc-linkedin a:hover {
+    color: var(--color-1C199A);
+}
+
+.our-coaches-cont .oc-outer-wrapper .oc-ow-prev-button,
+.our-coaches-cont .oc-outer-wrapper .oc-ow-next-button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--color-0F1A3A);
+    color: var(--color-F7F7F7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.our-coaches-cont .oc-outer-wrapper .oc-ow-prev-button:hover,
+.our-coaches-cont .oc-outer-wrapper .oc-ow-next-button:hover {
+    background-color: var(--color-1C199A);
+    transition: all 0.3s ease-in-out;
+}
+
+.our-coaches-cont .oc-outer-wrapper .oc-ow-prev-button-disabled,
+.our-coaches-cont .oc-outer-wrapper .oc-ow-next-button-disabled {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+@media screen and (min-width: 650px) and (max-width: 1249px) {
+    .our-coaches-cont .oc-card-cont {
+        width: 580px;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 669px) {
+    .our-coaches-cont .oc-card-cont {
+        width: 310px;
+    }
+
+    .our-coaches-cont .oc-card-cont .oc-cc-wrapper-cont .oc-cc-card {
+        width: 290px;
+        height: 610px;
+    }
+
+    .our-coaches-cont .oc-card-cont .oc-cc-wrapper-cont .oc-cc-card .oc-cc-card-cont .oc-cc-cc-text-cont {
+        width: 290px;
+    }
+
+    .our-coaches-cont .oc-card-cont .oc-cc-wrapper-cont .oc-cc-card .oc-cc-card-cont {
+        flex-direction: column;
+    }
+
+    .our-coaches-cont .oc-card-cont .oc-cc-wrapper-cont .oc-cc-card .oc-cc-card-cont .oc-cc-cc-image-cont {
+        width: 290px;
+        height: 320px;
+    }
+
+    .our-coaches-cont .oc-card-cont .oc-cc-wrapper-cont .oc-cc-card .oc-cc-card-cont .oc-cc-cc-text-cont .oc-cc-cc-tc-social-media-handle-cont .oc-cc-cc-tc-smhc-email a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 399px) {
+    .our-coaches-cont .oc-outer-wrapper {
+        gap: 0rem;
+    }
+}
+
+@media screen and (max-width: 349px) {
+    #our-coaches {
+        display: none;
+    } 
+}
+
+@media screen and (max-height: 349px) {
+    #our-coaches {
+        display: none;
+    }
+}

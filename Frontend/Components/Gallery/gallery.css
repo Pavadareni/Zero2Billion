@@ -1,0 +1,96 @@
+#gallery {
+    width: 100%;
+    background-color: var(--color-FFFFFFF);
+    padding-top: 40px; 
+}
+
+.gallery-card {
+    width: 300px; /* Reduced width */
+    height: 260px; /* Reduced height */
+}
+
+.gallery-card-link {
+    text-decoration: none;
+}
+
+.gallery-card-content {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-card-content:hover {
+    transform: scale(1.05);
+}
+
+.gallery-cont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0px 60px 0px;
+    gap: 2.5rem;
+}
+
+.gallery-cont .gallery-title {
+    font-size: 1.9rem;
+    font-weight: 500;
+    font-family: var(--font-roboto);
+    color: var(--color-292F53);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.gallery-cont .gallery-title::after {
+    content: "";
+    display: block;
+    width: 60px; /* Reduced the width of the underline */
+    height: 4px;
+    border-radius: 5px;
+    margin: 8px auto;
+    background-color: var(--color-1C199A);
+}
+
+.gallery-cont .gallery-card-cont {
+    width: 90vw;
+    max-width: 1400px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.gallery-cont .gallery-card-cont .gallery-card {
+    width: 300px; /* Reduced width */
+    height: 260px; /* Reduced height */
+}
+
+@media screen and (min-width: 350px) and (max-width: 449px) {
+    .gallery-cont .gallery-card-cont .gallery-card {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 349px) {
+    #gallery {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 349px) {
+    #gallery {
+        display: none;
+    }
+}
