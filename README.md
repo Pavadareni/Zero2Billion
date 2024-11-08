@@ -16,7 +16,7 @@ Discover the digital hub of Zero2Billion, where innovation meets excellence in e
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/Akilesh-ML-Engineer/Zero2Billion.git
+   git clone https://github.com/Pavadareni/Zero2Billion.git
    ```
 
 2. **Navigate to the Project Directory**:
